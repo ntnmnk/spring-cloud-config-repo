@@ -1,0 +1,22 @@
+
+server:
+  port: 8088
+
+spring:
+  application:
+    name: MOVIE-SERVICE
+
+  config:
+    import: "configserver:http://localhost:9296"
+
+
+  # security:
+  #   oauth2:
+  #     resource-server:
+  #       jwt:
+  #         issuer-uri: https://dev-84928916.okta.com/oauth2/default
+
+# api:
+#   key: XXXXXX
+#   url: https://api.themoviedb.org/3/movie
+
